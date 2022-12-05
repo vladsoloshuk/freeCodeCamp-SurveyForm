@@ -11,19 +11,19 @@
     <form id="survey-form">
       <fieldset>
         <label id="name-label">Name</label>
-        <input class="wide-input" type="text" id="name" placeholder="Enter your name" required />
+        <input class="form-control" type="text" id="name" placeholder="Enter your name" required />
       </fieldset>
       <fieldset>
         <label id="email-label">Email</label>
-        <input class="wide-input" type="email" id="email" placeholder="Enter your Email" required />
+        <input class="form-control" type="email" id="email" placeholder="Enter your Email" required />
       </fieldset>
       <fieldset>
         <label id="number-label">Age (optional)</label>
-        <input class="wide-input" type="number" id="number" min="10" max="99" placeholder="Age" required />
+        <input class="form-control" type="number" id="number" min="10" max="99" placeholder="Age" required />
       </fieldset>
       <fieldset>
         <label>Which option best describes your current role?</label>
-      <select id="dropdown">
+      <select id="dropdown-role" class="form-control">
         <option>Select current role</option>
         <option>Student</option>
         <option>Full Time Job</option>
@@ -34,14 +34,14 @@
       </fieldset>
       <fieldset>
       <label>Would you recommend freeCodeCamp to a friend?</label>
-      <label><input type="radio" name="radio" value="definitely" />Definitely</label>
+      <label><input type="radio" name="radio" value="definitely" checked/>Definitely</label>
       <label><input type="radio" name="radio" value="maybe" />Maybe</label>
       <label><input type="radio" name="radio" value="not-sure" />Not sure</label>
       </fieldset>
       <fieldset>
         <label>What is your favorite feature of freeCodeCamp?</label>
-      <select id="dropdown-feature">
-        <option>Select an option</option>
+      <select id="dropdown-feature" class="form-control">
+        <option selected>Select an option</option>
         <option>Challenges</option>
         <option>Projects</option>
         <option>Community</option>
@@ -67,7 +67,7 @@
         <textarea placeholder="Enter your comment here..."></textarea>
         </fieldset>
       <fieldset>
-      <button type="submit" id="submit">Submit</button>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
       </fieldset>
     </form>
   </body>
